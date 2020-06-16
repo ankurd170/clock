@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	
+<head>
+
+<style type="text/css">
+    
+
+.bottombox
+{
+     margin-top: 0px;
+     margin-left: 0px;
+     width: 100%;
+     height: 550px;
+     background-color:paleturquoise;
+     padding: 30px;
+     float: left;
+}    
+
+.clock
+{
+    margin-left: 400px;
+    height: 400px;
+    width: 400px;
+    background-image: url("/xampp/htdocs/analogclock/img/Clock.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    border-radius: 50%;
+}
+
+.hand
+{
+margin-top: 195px;
+margin-left: 78px;    
+width: 122px;    
+border:1px solid black;
+position: absolute;
+}
+
+.centr
+{
+     border: 1px solid black;
+     height: 10px;
+     width: 10px;
+     margin-top: 195px;
+     margin-left: 200px;
+     background-color: gold;
+     border-radius: 50%;
+     position: absolute;
+}
+.min
+{
+     margin-top: 0px;
+     border:3px solid black;
+     margin-left: 125px;
+}
+
+.sec
+{
+     margin-top: 0px;
+     border:1px solid red;
+     margin-left: 0px;
+}
+
+#sec,#min,#hr
+{
+     transform-origin: left;
+}
+
+.stp
+{
+     width: 100px;
+     margin-left: 450px;
+     
+}
+
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+     <nav class="navbar navbar-dark bg-dark ">
+         
+          <p class="tp text-center" style="color: blanchedalmond;">ANALOG CLOCK</p>
+     
+           <div class="btn btn-group">
+               
+               
+          </div>
+     </nav>
+     
+          
+<div class="bottombox" id='bbx'>
+
+    <div class="clock">
+         <div class="centr"></div>
+<div class="hand hour" id="hr">
+<div class="hand min" id="min">
+     <div class="hand sec" id="sec">
+
+     </div>
+</div>
+</div>
+<div class="stp">
+     <h3><b>Operations:</b></h3>
+      <div class="stop btn  btn-lg btn-danger " onclick="stopclock()">Stop clock</div><br><br>
+                
+                
+     <div class="start btn  btn-lg btn-success " onclick="anaclockstart()">Start clock</div>
+ </div>
+ 
+
+    </div>        
+<script type="text/javascript" src="js/analogclock.js" onload='anaclockstart()'></script>	
+
+
+</body>
+</html>
